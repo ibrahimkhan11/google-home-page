@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+section{
+    display: flex;
+
+}
+
+header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.ul{
+    text-decoration: none;
+    list-style: none;
+    
+
+}
+.ul li{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    padding-left:15px ;
+}
+.ul li button{
+    padding: 6.5px 18px;
+    position:relative;
+    top: -6px;
+    background-color: rgb(15, 127, 161);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 3.5px;
+    transition: all ease-in .2s;
+}
+.ul li:hover{
+    text-decoration: underline;
+
+}
+.ul li:hover>button{
+    background-color: black;
+    text-decoration: none !important;
+}
+
+.googleimg{
+    position: absolute;
+    top: 20%;
+    left: 38%;
+}
+
+.search{
+    position: absolute;
+    top: 38%;
+    left: 30%;
+  
+}
+.search input{
+    width: 500px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding-left: 35px;
+    outline: none;
+    transition: all ease-in .2s;
+}
+.search input:hover{
+    box-shadow: 0px 0px 3px black;
+}
+.search i{
+    position:relative;
+    left: -91%;
+    top: 2px;
+    color: rgb(58, 55, 55);
+}
+.search img{
+    position: relative;
+    left: -10.5%;
+    top: 6px;
+    height: 20px;
+}
+.text {
+    position: absolute;
+    top: 48%;
+    left:39%;
+    word-spacing: 20px;
+}
+.text button{
+    padding: 10px;
+    border: none;
+    background-color: rgb(141, 140, 140,.2);
+    border-radius: 2px;
+}
+.text2{
+    position: absolute;
+    top: 58%;
+    left: 43%;
+     transition: all ease-in .4s;
+}
+
+.text2 p a{
+    text-decoration: none;
+}
+.text2 p a:hover{
+    text-decoration: underline;
+}
+footer{
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+   background-color:rgba(105, 99, 99, 0.2);
+   display: flex;
+   justify-content: space-between;
+
+}
+ul{
+    list-style: none;
+}
+ul li{
+    float: left;
+    padding:10px 15px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(37, 36, 36);
+}
+
+@media (max-width:320px){
+    .googleimg {
+        left: 18%;
+        height: 80px;
+    }
+  .search{
+      top:45%;
+      left:0;
+  }
+  .search input{
+      width: 350px;
+  }
+  header{
+      right: -10px;
+  }
+
+.search i {
+    left: 4%;
+    top: -29px;
+}
+.search img {
+    left: 86.5%;
+    top: -27px;
+}
+}
